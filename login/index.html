@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/icon.ico" type="image/x-icon">
+    <title>ERP</title>
+</head>
+<body>
+    <div class="container">
+        <aside>
+            <div class="right-section">
+                <div class="user-profile">
+                    <div class="card">
+                        <h1>Entrar</h1>
+                
+                        <div id="msgError"></div>
+                
+                        <div class="label-float">
+                          <input type="text" id="usuario" paceholder="" required />
+                          <label id="userLabel" for="usuario">Usuario</label>
+                        </div>
+                
+                        <div class="label-float">
+                          <input type="password" id="senha" paceholder="" required />
+                          <label id="senhaLabel" for="senha">Senha</label>
+                          <i class="fa fa-eye" aria-hidden="true"></i>
+                        </div>
+                
+                        <div class="justify-center">
+                          <button onclick="entrar()">Entrar</button>
+                        </div>
+                
+                        <div class="justify-center">
+                          <hr />
+                        </div>
+                
+                        <p>
+                          Não tem uma conta?
+                          <a href="./signup.html">
+                            Cadastre-se
+                          </a>
+                        </p>
+                      </div>
+                    <button id="menu-btn"></button>
+                    <div class="dark-mode">
+                        <span class="material-icons-sharp active">
+                            light_mode
+                        </span>
+                        <span class="material-icons-sharp">
+                            dark_mode
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </aside>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
